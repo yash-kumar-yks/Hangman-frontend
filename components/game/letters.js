@@ -1,20 +1,18 @@
-import React from 'react'
+import React from "react";
+const ALL_LETTERS = [..."abcdefghijklmnopqrstuvwxyz"];
 
-const ALL_ALPHABETS = [..."abcdefghijklmnopqrstuvwxyz"];
-
-export default function Letters({
-  playedLetters, onSelect
-}) {
+export default function Letters({ Playedletters, onSelect }) {
   return (
-    <div>
-      {ALL_ALPHABETS.map((alphabet) => (
+    <div className="display-flex justify-content-center">
+      {ALL_LETTERS.map((alphabet) => (
         <button
           onClick={() => onSelect(alphabet)}
-          disabled={playedLetters.has(alphabet)}
+          disabled={Playedletters.has(alphabet)}
+          className="letter-button"
         >
           {alphabet}
         </button>
       ))}
     </div>
-  )
+  );
 }

@@ -3,7 +3,7 @@ import Lives from "./lives";
 import Word from "./word";
 import Letters from "./letters";
 import Start from "./start";
-export default function Layout({
+export default function Homw({
   lives,
   ActualWord,
   played_set,

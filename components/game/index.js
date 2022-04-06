@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Layout from "./layout";
+import Home from "./home";
 
 const MAX_LIVES = 6;
 export default function Game() {
@@ -32,7 +32,7 @@ export default function Game() {
 
   return (
     <>
-      <Layout
+      <Home
         lives={lives}
         ActualWord={ActualWord}
         played_set={played_set}
