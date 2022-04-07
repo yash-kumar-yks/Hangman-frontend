@@ -1,21 +1,14 @@
-import React, { useState } from 'react'
+import React from "react";
 
-export default function Start({ onStart }) {
-  const [name, setName] = useState("");
-
+export default function Start({ onStart, isRunning }) {
   return (
     <div>
-      <input 
-        type="text" 
-        placeholder="Name"
-        onChange={(e) => setName(e.target.name)} 
-        name={name} 
-      />
       <button
-        onClick={() => onStart(name)}
+        onClick={() => onStart()}
+        className={`start-button ${isRunning && "display-none"}`}
       >
         Start
       </button>
     </div>
-  )
+  );
 }
