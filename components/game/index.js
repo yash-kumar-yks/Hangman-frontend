@@ -11,7 +11,9 @@ export default function Game() {
   const wrong_letters = Playedletters.filter((letter) => {
     return !word_set.has(letter);
   });
+  
   const lives = MAX_LIVES - wrong_letters.length;
+  console.log(lives);
   const isWon =
     lives > 0 &&
     [...word_set].reduce((acc, curr) => {
@@ -19,7 +21,7 @@ export default function Game() {
 
       return acc;
     }, true);
-  const isRunning = ActualWord && lives >= 0 && !isWon;
+  const isRunning = ActualWord && lives > 0 && !isWon;
 
   const guess = (alphabet) => {
     setPlayedletters((prev) => [...prev, alphabet]);

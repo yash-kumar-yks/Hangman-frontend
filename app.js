@@ -4,9 +4,6 @@ import Game from './components/game'
 
 const App = () => (
   <>
-    <div>
-      Hello World !
-    </div>
     <Game />
   </>
 

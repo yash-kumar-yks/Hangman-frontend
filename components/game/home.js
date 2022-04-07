@@ -18,7 +18,7 @@ export default function Home({
         {isRunning && (
           <>
             <div className="left-pane">
-              <Lives livesleft={lives} />
+              <Lives livesLeft={lives} />
             </div>
 
             <div className="right-pane">
