@@ -13,9 +13,9 @@ export default function Game() {
   });
   
   const lives = MAX_LIVES - wrong_letters.length;
-  console.log(lives);
+  // console.log(lives);
   const isWon =
-    lives > 0 &&
+    lives > 0 && Playedletters.length>0 &&
     [...word_set].reduce((acc, curr) => {
       if (!played_set.has(curr)) return false;
 
