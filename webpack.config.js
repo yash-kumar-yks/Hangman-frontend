@@ -3,11 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: "development",
   entry: "./app.js", // entry point of react application(hangman)
-  // output: {
-  //   path: path.resolve('/', 'build'), // change this
-  //   publicPath: '/',
-  //   filename: 'bundle.js'
-  // },
+  output: {
+    path: path.resolve(__dirname, 'build'), // change this
+    publicPath: '/',
+    filename: 'bundle.js'
+  },
+  devServer: {
+    contentBase: "./build",
+  },
   module: {
     rules: [
       {
