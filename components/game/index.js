@@ -4,7 +4,7 @@ import Word from './word';
 import Letters from './letters';
 import Start from './start';
 import { createSession, playInSession } from '../../api/sessions';
-
+import '../../styles/components/main.css'
 const MAX_LIVES = 6;
 export default function Game() {
   const [session, setSession] = useState(null)

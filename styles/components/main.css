@@ -1,0 +1,47 @@
+.hangman_heading{
+    margin: 0;
+    padding-bottom: 6rem;
+    color: #4db1bc;
+    font-size: 6rem;
+    font-family: 'Brush Script MT', cursive;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    text-align: center;
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 2px #2d9da9;
+      }
+    10% {
+        color: #8e44ad;
+      }
+      20% {
+        color: #1abc9c;
+      }
+      30% {
+        color: #d35400;
+      }
+      40% {
+        color: blue;
+      }
+      50% {
+        color: #34495e;
+      }
+      60% {
+        color: blue;
+      }
+      70% {
+        color: #2980b9;
+      }
+      80% {
+        color: #f1c40f;
+      }
+      90% {
+        color: #2980b9;
+      }
+    
+    100%{
+        text-shadow: 0 0 8px #34b3c1, 0 0 10px #4dbbc7;
+      font-size: 6.3rem;
+      color:pink;
+    }
+  }
