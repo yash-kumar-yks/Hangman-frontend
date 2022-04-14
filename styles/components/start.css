@@ -1,0 +1,20 @@
+.button_start{
+  background-color: lightpink;
+  padding: 1rem 2.5rem;
+  display: inline-grid;
+  place-items: center;
+  font-size: 2rem;
+  color: navy;
+  border-radius: 15px;
+  border: 2px solid pink;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 150ms ease-in-out, background 150ms ease-in-out;
+  cursor: pointer;
+  left:50%;
+  top:50%;
+}
+.button_start:hover{
+    transform: translate(0, 0.5rem);
+    background: darken(pink, 2.5%);
+}

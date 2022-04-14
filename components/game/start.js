@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import '../../styles/components/start.css'
 export default function Start({ onStart }) {
   const [name, setName] = useState("");
 
@@ -12,6 +12,7 @@ export default function Start({ onStart }) {
         name={name} 
       />
       <button
+      className="button_start"
         onClick={() => onStart(name)}
       >
         Start
