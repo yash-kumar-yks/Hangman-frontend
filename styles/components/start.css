@@ -11,10 +11,23 @@
   transform-style: preserve-3d;
   transition: transform 150ms ease-in-out, background 150ms ease-in-out;
   cursor: pointer;
-  left:50%;
+  left:44%;
   top:50%;
 }
 .button_start:hover{
     transform: translate(0, 0.5rem);
     background: darken(pink, 2.5%);
+}
+.input_start{
+  border:none;
+  text-decoration: none;
+  width:39%;
+  left:30%;
+  padding: 1rem;
+  border:1px solid black;
+  border-radius: 99px;
+  position: relative;
+}
+.input_start:hover{
+  border: 1px solid pink;
 }

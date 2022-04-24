@@ -6,6 +6,7 @@ export default function Start({ onStart }) {
   return (
     <div>
       <input 
+      className='input_start'
         type="text" 
         placeholder="Name"
         onChange={(e) => setName(e.target.name)} 

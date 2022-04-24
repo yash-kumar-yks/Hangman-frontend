@@ -37,7 +37,7 @@ export default function Game() {
         <h2>YOU LOSE !!!</h2>
       </>}
       {!isRunning && <>
-        <h1 className="hangman_heading">hangman</h1>
+        <h1 className="hangman_heading">hangman game</h1>
         <Start onStart={start} />
       </>}
     </>
