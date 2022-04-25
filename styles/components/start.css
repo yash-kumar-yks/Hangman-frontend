@@ -19,15 +19,19 @@
     background: darken(pink, 2.5%);
 }
 .input_start{
-  border:none;
+  border:0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
   text-decoration: none;
   width:39%;
   left:30%;
-  padding: 1rem;
-  border:1px solid black;
-  border-radius: 99px;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
   position: relative;
 }
-.input_start:hover{
-  border: 1px solid pink;
+.input_start:focus{
+    color: black;
+    border-bottom: 2px solid #11998e;
 }

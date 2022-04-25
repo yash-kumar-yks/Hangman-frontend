@@ -1,4 +1,5 @@
 const BASE_URL = "https://hangman-yks.herokuapp.com/api/sessions";
+// const BASE_URL = "http://localhost:7000/api/sessions";
 
 async function createSession(name) {
   const response = await fetch(`${BASE_URL}/`, {
